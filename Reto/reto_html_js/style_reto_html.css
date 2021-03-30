@@ -1,0 +1,35 @@
+html, button {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    padding: 10px 50px
+}
+
+
+.button {
+        background: #815f86;
+        border: none;
+        border-radius: 30px;
+        color:white;
+        font-size: 20px;
+        font-weight: 300px;
+        padding: 15px 30px;
+}
+
+.picture {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    color:#815f86;
+    font-weight:600px;
+    font-size:30px;
+}
+
+.subtitle {
+    color:#815f86;
+    font-weight:300px;
+    font-size:40px;
+}
