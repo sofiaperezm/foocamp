@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: #08585C;
+    background-image: url("https://images.ctfassets.net/3s5io6mnxfqz/4w2HQFnzRAsjqgWjNtuy1v/41becac8b5d850dd15302b785119435f/AdobeStock_268001268.jpeg");
+    background-size: cover;
 }
 
 header {
@@ -32,6 +33,8 @@ h3 {
 
 main {
     padding: 45px;
+    background-color: rgb(8 88 92 / 77%);
+    height: 75vh;
 }
 
 .preparation-section {
