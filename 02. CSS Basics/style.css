@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: #08585C;
+}
+
+header {
+    background-color: #333
+} 
+
+h1 {
+    margin: 0;
+    font-size: 65px;
+    padding: 45px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #F49731;
+    display: inline-block;
+    padding: 10px;
+    margin: 30px 30px;
+}
+
+.ingredients-section {
+    margin-bottom: 60px;
+}
+
+main {
+    padding: 45px;
+}
+
+.preparation-section {
+    border-style: dashed;
+    border-width: 10px;
+    border-color: #F49731;
+}
+
+.text {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.white-text {
+    color: #fbfbfb;
+}
+
+.yellow-text {
+    color: yellow;
+}
