@@ -1,0 +1,28 @@
+BOX MODEL PRACTICE
+------------------
+
+For this practice you only need to work on the CSS file. Both the HTML and javascript files don't require any change.
+When the styles are ready just uncoment the link to the javascript file in the HTML, and the commented styles in the CSS, and enjoy the accordion.
+
+Some of the properties you are most likely to use:
+
+- width
+- height
+- margin
+- padding
+- box-sizing
+- font-size
+- line-height
+- background-color
+- color
+- font-family
+- list-style-type
+- border
+- border-radius
+- cursor
+
+---
+
+Resourses:
+
+https://htmlcolorcodes.com/color-names/

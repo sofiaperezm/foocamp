@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.8em;
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.acc__container {
+	width: 100%;
+}
+
+.acc__list1 {
+	width: 600px;
+	margin: 100px auto;
+	padding: 0;
+	list-style-type: none;
+}
+
+.acc__button1 {
+	border-style: solid;
+	border-color:#92aa83;
+	background-color:#e0edc5;
+	color:#054a29;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto; 
+	width: 600px;
+	height: 40px;
+	border-radius: 3px;
+}
+
+.acc__list2 {
+	width: 600px;
+	margin: auto;
+	padding: 0;
+}
+
+
+.acc__item2 {
+	list-style-type: none;
+	background-color:#f1f7ee;
+	color:#054a29;
+	padding: 0 15px;
+}
+
+/* Add this when enabling javascript */
+/* .acc__list2 { */
+/* 	display: none; */
+/* 	overflow: hidden; */
+/* } */
