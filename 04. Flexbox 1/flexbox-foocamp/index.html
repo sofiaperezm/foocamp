@@ -1,0 +1,564 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FlexBox - &#60;FooCamp &#47;&#62;</h1>
+		<h2>Parent Properties</h2>
+    <div class="flex flex-1">
+      <h3>1: Display</h3>
+
+			<h4>Display: flex;</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+					<!-- <div class="item">4</div> -->
+				</div>
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+
+			<h4>Display: inline-flex;</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+					<!-- <div class="item">4</div> -->
+				</div>
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="flex flex-2">
+      <h3>2: Flex-direction</h3>
+
+			<h4>Flex-direction: row;</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+
+			<h4>Flex-direction: row-reverse;</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+
+			<h4>Flex-direction: column;</h4>
+			<div class="option-3">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+
+			<h4>Flex-direction: column-reverse;</h4>
+			<div class="option-4">
+				<div class="container">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="flex flex-3">
+      <h3>3: Flex-wrap</h3>
+
+			<h4>Flex-wrap: nowrap;</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item lg">1</div>
+					<div class="item lg">2</div>
+					<div class="item lg">3</div>
+					<div class="item lg">4</div>
+					<div class="item lg">5</div>
+					<div class="item lg">6</div>
+					<div class="item lg">7</div>
+					<div class="item lg">8</div>
+					<div class="item lg">9</div>
+					<div class="item lg">10</div>
+					<div class="item lg">11</div>
+					<div class="item lg">12</div>
+				</div>
+			</div>
+
+			<h4>Flex-wrap: wrap;</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item lg">1</div>
+					<div class="item lg">2</div>
+					<div class="item lg">3</div>
+					<div class="item lg">4</div>
+					<div class="item lg">5</div>
+					<div class="item lg">6</div>
+					<div class="item lg">7</div>
+					<div class="item lg">8</div>
+					<div class="item lg">9</div>
+					<div class="item lg">10</div>
+					<div class="item lg">11</div>
+					<div class="item lg">12</div>
+				</div>
+			</div>
+
+			<h4>Flex-wrap: wrap-reverse;</h4>
+			<div class="option-3">
+				<div class="container">
+					<div class="item lg">1</div>
+					<div class="item lg">2</div>
+					<div class="item lg">3</div>
+					<div class="item lg">4</div>
+					<div class="item lg">5</div>
+					<div class="item lg">6</div>
+					<div class="item lg">7</div>
+					<div class="item lg">8</div>
+					<div class="item lg">9</div>
+					<div class="item lg">10</div>
+					<div class="item lg">11</div>
+					<div class="item lg">12</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="flex flex-4">
+      <h3>4: Flex-flow</h3>
+
+			<div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </div>
+
+    <div class="flex flex-5">
+      <h3>5: Justify-content</h3>
+
+			<h4>Justify-content: Flex-start</h4>
+			<div class="option-1">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+
+			<h4>Justify-content: Flex-end</h4>
+      <div class="option-2">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+
+			<h4>Justify-content: Center</h4>
+      <div class="option-3">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+
+			<h4>Justify-content: Space-between</h4>
+      <div class="option-4">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Justify-content: Space-around</h4>
+      <div class="option-5">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Justify-content: Space-evenly</h4>
+      <div class="option-6">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-6">
+      <h3>6: Align-items</h3>
+
+			<h4>Align-items: Stretch (default)</h4>
+      <div class="option-1">
+        <div class="container">
+          <div class="item stretch lg-text">Ut enim minim</div>
+          <div class="item stretch">Ad veni</div>
+          <div class="item stretch">Quis nostrud exercitation neminaes</div>
+          <div class="item stretch">Duis aute irure dolor</div>
+        </div>
+      </div>
+
+      <h4>Align-items: Flex-start</h4>
+			<div class="option-2">
+        <div class="container">
+          <div class="item stretch lg-text">Ut enim minim</div>
+          <div class="item stretch">Ad veni</div>
+          <div class="item stretch">Quis nostrud exercitation neminaes</div>
+          <div class="item stretch">Duis aute irure dolor</div>
+        </div>
+      </div>
+
+			<h4>Align-items: Flex-end</h4>
+      <div class="option-3">
+        <div class="container">
+          <div class="item stretch lg-text">Ut enim minim</div>
+          <div class="item stretch">Ad veni</div>
+          <div class="item stretch">Quis nostrud exercitation neminaes</div>
+          <div class="item stretch">Duis aute irure dolor</div>
+        </div>
+      </div>
+
+			<h4>Align-items: Center</h4>
+      <div class="option-4">
+        <div class="container">
+          <div class="item stretch lg-text">Ut enim minim</div>
+          <div class="item stretch">Ad veni</div>
+          <div class="item stretch">Quis nostrud exercitation neminaes</div>
+          <div class="item stretch">Duis aute irure dolor</div>
+        </div>
+      </div>
+
+			<h4>Align-items: Baseline</h4>
+      <div class="option-5">
+        <div class="container">
+          <div class="item stretch lg-text">Ut enim minim</div>
+          <div class="item stretch">Ad veni</div>
+          <div class="item stretch">Quis nostrud exercitation neminaes</div>
+          <div class="item stretch">Duis aute irure dolor</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-7">
+      <h3>7: Align-content</h3>
+
+      <h4>Align-content: Flex-start</h4>
+			<div class="option-1">
+        <div class="container">
+          <div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+					<div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Flex-end</h4>
+      <div class="option-2">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Center</h4>
+      <div class="option-3">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Stretch</h4>
+      <div class="option-4">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Space-between</h4>
+      <div class="option-5">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">6</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Space-around</h4>
+      <div class="option-6">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+					<div class="item">5</div>
+          <div class="item">6</div>
+        </div>
+      </div>
+
+			<h4>Align-content: Space-evenly</h4>
+      <div class="option-7">
+        <div class="container">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+					<div class="item">5</div>
+          <div class="item">6</div>
+        </div>
+      </div>
+    </div>
+
+		<h2>Children Properties</h2>
+    <div class="flex flex-8">
+      <h3>1: Order</h3>
+
+			<h4>Order: 0; (default)</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item item-1">1</div>
+					<div class="item item-2">2</div>
+					<div class="item item-3">3</div>
+					<div class="item item-4">4</div>
+				</div>
+			</div>
+
+			<h4>Order: 1;</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item item-1">1</div>
+					<div class="item item-2">2</div>
+					<div class="item item-3">3</div>
+					<div class="item item-4">4</div>
+				</div>
+			</div>
+
+			<h4>Order: -1;</h4>
+			<div class="option-3">
+				<div class="container">
+					<div class="item item-1">1</div>
+					<div class="item item-2">2</div>
+					<div class="item item-3">3</div>
+					<div class="item item-4">4</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="flex flex-9">
+      <h3>2: Flex-grow</h3>
+
+      <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+      </div>
+
+			<p>* This calculation is made when the container has a width of </p>
+			<div class="formula">
+				<p>new width = [(flex grow/total flex grow) x free space] + width</p>
+				<p>Total flex grow = sum of elements flex grow</p>
+				<p>Free space = container width - sum of elements width</p>
+
+				<h4>Example</h4>
+				<p>Total flex grow = </p>
+				<p>Free space = </p>
+				<p>New width item 3 = </p>
+				<p>New width item 4 = </p>
+			</div>
+    </div>
+
+    <div class="flex flex-10">
+      <h3>3: Flex-shrink</h3>
+
+      <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+      </div>
+
+			<p>* This calculation is made when the container has a width of </p>
+			<div class="formula">
+				<p>new width = width - [(flex shrink/total flex shrink) x shrink space]</p>
+				<p>Total flex shrink = sum of elements flex shrink</p>
+				<p>Shrink space = sum of elements width - container width</p>
+
+				<h4>Example</h4>
+				<p>Total flex shrink = </p>
+				<p>Shrink space = </p>
+				<p>New width item 1 = </p>
+			</div>
+    </div>
+
+    <div class="flex flex-11">
+      <h3>4: Flex-basis</h3>
+
+      <div class="container">
+        <div class="item stretch item-1">1</div>
+        <div class="item stretch item-2">2</div>
+        <div class="item stretch item-3">Some text</div>
+        <div class="item stretch item-4">4</div>
+      </div>
+    </div>
+
+		<div class="flex flex-12">
+      <h3>5: Flex</h3>
+
+			<h4>Flex: 0 1 auto; (default)</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item stretch item-1">Some text</div>
+					<div class="item stretch item-2">Some text</div>
+				</div>
+			</div>
+
+			<h4>Flex: 0 0 auto; (same as flex: none;)</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item stretch item-1">Some text</div>
+					<div class="item stretch item-2">Some text... more content!</div>
+					<!-- <div class="item stretch item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+				</div>
+			</div>
+
+			<h4>Flex: 1 1 auto; (same as flex: auto;)</h4>
+			<div class="option-3">
+				<div class="container">
+					<div class="item stretch item-1">Some text</div>
+					<div class="item stretch item-2">Some text... more content!</div>
+					<!-- <div class="item stretch item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+				</div>
+			</div>
+
+			<h4>Flex: "positive number"; (same as flex: "positive number" 1 0;)</h4>
+			<div class="option-4">
+				<div class="container">
+					<div class="item stretch item-1">Some text</div>
+					<div class="item stretch item-2">Some text... more content!</div>
+					<!-- <div class="item stretch item-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+				</div>
+			</div>
+
+			<h4>Flex: Relative flex-items (spacing is computed based on its content size)</h4>
+			<div class="option-5">
+				<div class="container">
+					<div class="item stretch item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="item stretch item-2">Some text</div>
+				</div>
+			</div>
+
+			<h4>Flex: Absolute flex-items (spacing is computed based on "flex" content size)</h4>
+			<div class="option-6">
+				<div class="container">
+					<div class="item stretch item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="item stretch item-2">Some text</div>
+				</div>
+			</div>
+    </div>
+
+		<div class="flex flex-13">
+      <h3>6: Align-self</h3>
+
+			<h4>Align-self: auto</h4>
+			<div class="option-1">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+
+			<h4>Align-self: stretch</h4>
+			<div class="option-2">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+
+			<h4>Align-self: flex-start</h4>
+			<div class="option-3">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+
+			<h4>Align-self: flex-end</h4>
+			<div class="option-4">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+
+			<h4>Align-self: center</h4>
+			<div class="option-5">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+
+			<h4>Align-self: baseline</h4>
+			<div class="option-6">
+				<div class="container">
+					<div class="item stretch lg-text item-1">Ut enim minim</div>
+					<div class="item stretch item-2">Quis nostrud exercitation neminaes</div>
+					<div class="item stretch item-3">Ad veni</div>
+					<div class="item stretch item-4">Duis aute irure dolor</div>
+				</div>
+			</div>
+    </div>
+  </body>
+</html>

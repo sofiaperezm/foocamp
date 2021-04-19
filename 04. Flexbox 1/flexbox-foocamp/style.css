@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.flex {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: snow;
+  height: 200px;
+  border-radius: 4px;
+	padding: 1px;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #EA178C;
+  text-align: center;
+}
+
+.sm {
+  width: 20px;
+}
+
+.lg {
+  width: 80px;
+}
+
+.stretch {
+	width: auto;
+	height: auto;
+	margin-right: 5px;
+	padding: 5px;
+	text-align: left;
+}
+
+.stretch:last-child {
+	margin-right: 0;
+}
+
+.lg-text {
+	font-size: 30px;
+}
+
+/* ---Start: Parent Properties--- */
+/**
+* Display
+*/
+
+/* Display: flex */
+.flex-1 .option-1 .container {
+	display:flex;
+	/* display: flex; */
+	margin-bottom: 10px;
+}
+
+/* Display: inline-flex */
+.flex-1 .option-2 .container {
+	display:inline-flex;
+	margin-right: 10px;
+}
+
+/* ============================ */
+/**
+* Flex Direction
+*/
+
+.flex-2 .container {
+  display: flex;
+}
+
+/* Flex Direction: row */
+.flex-2 .option-1 .container {
+	flex-direction: row;
+}
+
+/* Flex Direction: row-reverse */
+.flex-2 .option-2 .container {
+	flex-direction:row-reverse;
+}
+
+/* Flex Direction: column */
+.flex-2 .option-3 .container {
+	flex-direction:column;
+}
+
+/* Flex Direction: column-reverse */
+.flex-2 .option-4 .container {
+	/* Insert code here */
+	flex-direction: column-reverse;
+}
+
+/* ============================ */
+/**
+* Flex Wrap
+*/
+
+.flex-3 .container {
+  display: flex;
+}
+
+/* Flex Wrap: nowrap */
+.flex-3 .option-1 .container {
+	/* Insert code here */
+	flex-wrap: nowrap;
+}
+
+/* Flex Wrap: wrap */
+.flex-3 .option-2 .container {
+	/* Insert code here */
+	flex-wrap: wrap;
+}
+
+/* Flex Wrap: wrap-reverse */
+.flex-3 .option-3 .container {
+	/* Insert code here */
+	flex-wrap:wrap-reverse;
+}
+
+/* ============================ */
+/**
+* Flex Flow: <flex-direction> || <flex-wrap>
+*/
+
+.flex-4 .container {
+  display: flex;
+	/* Insert code here */
+	flex-flow: column wrap;
+}
+
+/* ============================ */
+/**
+* Justify Content
+*/
+
+.flex-5 .container {
+	display: flex;
+}
+
+/* Justify Content: Flex-start */
+.flex-5 .option-1 .container {
+	justify-content: flex-start;
+	/* Insert code here */
+}
+
+/* Justify Content: Flex-end */
+.flex-5 .option-2 .container {
+	justify-content: flex-end;
+	/* Insert code here */
+}
+
+/* Justify Content: Center */
+.flex-5 .option-3 .container {
+	justify-content: center;
+
+	/* Insert code here */
+}
+
+/* Justify Content: Space-between */
+.flex-5 .option-4 .container {
+	flex-direction: column;
+	justify-content: space-between;
+	/* Insert code here */
+}
+
+/* Justify Content: Space-around */
+.flex-5 .option-5 .container {
+	justify-content: space-around;
+}
+
+/* Justify Content: Space-evenly */
+.flex-5 .option-6 .container {
+	justify-content: space-evenly;
+	/* Insert code here */
+}
+
+/* ============================ */
+/**
+* Align Items
+*/
+
+.flex-6 .container {
+	display: flex;
+}
+
+/* Align Items: Stretch */
+.flex-6 .option-1 .container {
+	/* Insert code here */
+	align-items: stretch;
+}
+
+/* Align Items: Flex-start */
+.flex-6 .option-2 .container {
+	/* Insert code here */
+	align-items: flex-start;
+}
+
+/* Align Items: Flex-end */
+.flex-6 .option-3 .container {
+	/* Insert code here */
+	align-items: flex-end;
+}
+
+/* Align Items: Center */
+.flex-6 .option-4 .container {
+	/* Insert code here */
+	align-items:center;
+}
+
+/* Align Items: Baseline */
+.flex-6 .option-5 .container {
+	align-items:baseline;
+	/* Insert code here */
+}
+
+/* ============================ */
+/**
+* Align Content
+*/
+
+.flex-7 .container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-7 .item {
+	width: 40%;
+	height: auto;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+/* Align Content: Flex-start */
+.flex-7 .option-1 .container {
+	/* Insert code here */
+	align-content: flex-start;
+}
+
+/* Align Content: Flex-end */
+.flex-7 .option-2 .container {
+	/* Insert code here */
+	align-content: flex-end;
+}
+
+/* Align Content: Center */
+.flex-7 .option-3 .container {
+	/* Insert code here */
+	align-content: center;
+}
+
+/* Align Content: Stretch */
+.flex-7 .option-4 .container {
+	/* Insert code here */
+	align-content: stretch;
+}
+
+/* Align Content: Space-between */
+.flex-7 .option-5 .container {
+	/* Insert code here */
+	align-content: space-between;
+}
+
+/* Align Content: Space-around */
+.flex-7 .option-6 .container {
+	/* Insert code here */
+	align-content: space-around;
+}
+
+/* Align Content: Space-evenly */
+.flex-7 .option-7 .container {
+	/* Insert code here */
+	align-content: space-evenly;
+}
+/* ---End: Parent Properties--- */
+
+/* ---Start: Children Properties--- */
+/**
+* Order
+*/
+
+.flex-8 .container {
+  display: flex;
+}
+
+/* Order: 0 */
+.flex-8 .option-1 .item {
+	/* Insert code here */
+	order: 0;
+}
+
+/* Order: 1 */
+.flex-8 .option-2 .item-3 {
+	/* Insert code here */
+	order: 1;
+}
+
+/* Order: -1 */
+.flex-8 .option-3 .item-3 {
+	/* Insert code here */
+	order: -1;
+}
+
+/* ============================ */
+/**
+* Flex Grow
+*/
+
+.flex-9 .container {
+	display: flex;
+}
+
+.flex-9 .item-3 {
+	/* Insert code here */
+	flex-grow: 3;
+}
+.flex-9 .item-4 {
+	/* Insert code here */
+	flex-grow: 4;
+}
+
+/* ============================ */
+/**
+* Flex Shrink
+*/
+
+.flex-10 .container {
+	display: flex;
+	
+}
+
+.flex-10 .item {
+	width: 200px;
+	flex-shrink: 0;
+}
+
+.flex-10 .item-3 {
+	/* Insert code here */
+	flex-shrink: 1;
+}
+
+.flex-10 .item-4 {
+	/* Insert code here */
+}
+/* ============================ */
+
+/**
+* Flex Basis
+*/
+
+.flex-11 .container {
+	display: flex;
+}
+
+.flex-11 .item-3 {
+	/* Insert code here */
+	flex-basis: 200px;
+	flex-grow: 1;
+}
+/* ============================ */
+
+/**
+* Flex
+*/
+
+.flex-12 .container {
+	display: flex;
+}
+
+/* Flex: 0 1 auto; (default) */
+.flex-12 .option-1 .item {
+	flex: 0 1 auto;
+}
+
+/* Flex: 0 0 auto; (same as flex: none;) */
+.flex-12 .option-2 .item {
+	flex: 0 0 auto;
+}
+
+/* Flex: 1 1 auto; (same as flex: auto;) */
+.flex-12 .option-3 .item {
+	flex: 1 1 auto;
+}
+
+/* Flex: "positive number"; (same as flex: "positive number" 1 0;) */
+.flex-12 .option-4 .item-1 {
+	flex: 1 1 0;
+}
+
+.flex-12 .option-4 .item-2 {
+	flex: 1 1 0;
+}
+
+/* Flex: Relative flex-items (spacing based on content size) */
+/* Example: flex: auto;*/
+.flex-12 .option-5 .item {
+	flex: auto; 
+}
+
+/* Flex: Absolute flex-items (spacing based on "flex" content size) */
+/* Example: flex: 1; */
+.flex-12 .option-6 .item {
+	flex: 1;
+}
+/* ============================ */
+
+/**
+* Align Self
+*/
+
+.flex-13 .container {
+	display: flex;
+}
+
+/* Align Self: auto */
+.flex-13 .option-1 .item-1,
+.flex-13 .option-1 .item-2 {
+	align-self: auto;
+}
+
+/* Align Self: stretch */
+.flex-13 .option-2 .item-1,
+.flex-13 .option-2 .item-2 {
+	align-self: stretch
+}
+
+/* Align Self: flex-start */
+.flex-13 .option-3 .item-1,
+.flex-13 .option-3 .item-2 {
+	align-self: flex-start;
+}
+
+/* Align Self: flex-end */
+.flex-13 .option-4 .item-1,
+.flex-13 .option-4 .item-2 {
+	align-self: flex-end;
+}
+
+/* Align Self:  */
+.flex-13 .option-5 .item-1,
+.flex-13 .option-5 .item-2 {
+	align-self: center;
+}
+
+/* Align Self: baseline */
+.flex-13 .option-6 .item-1,
+.flex-13 .option-6 .item-2 {
+	align-self: baseline;
+}
+
+/* ---End: Children Properties--- */

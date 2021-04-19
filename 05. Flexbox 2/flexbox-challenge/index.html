@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FooCamp - Flexbox Challenges</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>FlexBox Challenges - &#60;FooCamp &#47;&#62;</h1>
+
+	<!-- Challenge 1 -->
+	<h2>#1: Navigation</h2>
+	<p>These list items are the navigation for a site. They should be laid out as a row, with an equal amount of space between each item. The finished example should look like the image below.</p>
+	<h3>Reference</h3>
+	<div class="image-solution">
+		<img src="assets/01-navigation.png" alt="Navigation">
+	</div>
+	<h3>Solution</h3>
+	<section class="preview">
+		<nav class="main-nav">
+			<ul class="main-nav__links">
+				<li>
+					<a class="item main-nav__link" href="#">Home</a>
+				</li>
+				<li>
+					<a class="item main-nav__link" href="#">About Us</a>
+				</li>
+				<li>
+					<a class="item main-nav__link" href="#">Our Products</a>
+				</li>
+				<li>
+					<a class="item main-nav__link" href="#">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+
+	<!-- Challenge 2 -->
+	<h2>#2: Items with same width</h2>
+	<p>These list items are all different sizes, but we want them to be displayed as three equal sized columns, no matter what content is in each item.</p>
+	<h3>Reference</h3>
+	<div class="image-solution">
+		<img src="assets/02-cards.png" alt="Cards">
+	</div>
+	<h3>Solution</h3>
+	<section class="preview">
+		<ul class="cards">
+			<li class="item cards__item">I am small</li>
+			<li class="item cards__item">I have more content than the very small item.</li>
+			<li class="item cards__item">I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
+		</ul>
+	</section>
+
+	<!-- Challenge 3 -->
+	<h2>#3: Center item inside parent</h2>
+	<p>There are two elements in the HTML below, a div with a class of ".parent" which contains another div with a class of ".child". Use Flexbox to center the child inside the parent.</p>
+	<h3>Reference</h3>
+	<div class="image-solution">
+		<img src="assets/03-center.png" alt="Center">
+	</div>
+	<h3>Solution</h3>
+	<section class="center preview">
+		<div class="parent">
+			<div class="item child">Center me.</div>
+		</div>
+	</section>
+
+	<!-- Challenge 4 -->
+	<h2>#4: Display items in different rows</h2>
+	<p>In this final task arrange these items into rows as in the image.</p>
+	<h3>Reference</h3>
+	<div class="image-solution">
+		<img src="assets/04-rows.png" alt="Rows">
+	</div>
+	<h3>Solution</h3>
+	<section class="rows preview">
+		<ul class="list">
+			<li class="item list__item">Turnip</li>
+			<li class="item list__item">greens</li>
+			<li class="item list__item">yarrow</li>
+			<li class="item list__item">ricebean</li>
+			<li class="item list__item">rutabaga</li>
+			<li class="item list__item">endive</li>
+			<li class="item list__item">cauliflower</li>
+			<li class="item list__item">sea lettuce</li>
+			<li class="item list__item">kohlrabi</li>
+			<li class="item list__item">amaranth</li>
+		</ul>
+	</section>
+</body>
+</html>
