@@ -1,0 +1,27 @@
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("https://cdn.pixabay.com/photo/2016/01/19/16/49/laptop-1149412_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px;
+    background-size: cover;
+}
+
+.hero_txt {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.hero_txt--paragraph {
+    font-size: 28px;
+}
+
+.tools_container {
+    position: flex;
+    flex-flow: row wrap;
+}
+
