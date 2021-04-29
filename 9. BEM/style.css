@@ -21,7 +21,77 @@
 }
 
 .tools_container {
-    position: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 80px;
 }
 
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border: 0.2px solid #f0f0f0;
+    padding: 20px;
+    font-size: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.card_label {
+    font-family: Varela Round;
+    color:#354a5f;
+    font-size: 22px;
+    background-color: white;
+    margin-top: -30px;
+    padding: 0 15px;
+    width: fit-content;
+}
+
+.card_title {
+    font-family: Montserrat;
+    font-weight: 500px;
+    font-size: 32px;
+}
+
+.card_label--green {
+    color: #2cb756;
+}
+
+.card_label--blue {
+    color: #208dc8;
+}
+
+.card_label--red {
+    color: #e74b3c;
+}
+
+.card_text {
+    font-family: Montserrat;
+    font-weight: 200px;
+    color:#a3a3a3;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button {
+    font-family: Montserrat;
+    background-color: #354a5f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: auto;
+    cursor: pointer;
+}
+
+.button--bg-green {
+    background-color: #2cb756; 
+}
+
+.button--bg-blue {
+    background-color: #208dc8;
+}
+
+.button--bg-red {
+    background-color: #e74b3c;
+}
