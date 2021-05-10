@@ -1,0 +1,91 @@
+/* Font Family Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.logo {
+    width: 146px;
+    height: 52px;
+}
+
+.menu-icon {
+    width: 52px;
+    height: 40px;
+} 
+
+.hero {
+    padding: 20px 20px;
+}
+
+.hero-image {
+    display: none;
+}
+
+.hero__text {
+    /* display: flex; */
+    font-size: 18px;
+    font-family: "Work Sans";
+    line-height: 38px;
+    color: #7D7D7D
+}
+
+.hero__text--font {
+    font-size: 38px;
+    line-height: 45px;
+    color: #2F2F2F;
+}
+
+h1 > span {
+    color:#717cff
+}
+
+.apply-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #717cff;
+    color: #FFFFFF;
+    border-radius: 11px;
+    border: none;
+    font-family: "Work Sans";
+    font-family: Work Sans;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 12px 20px;
+}
+
+.apply-button > img {
+    width: 18.17px;
+    height: 17.72px;
+    padding-left: 12px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    padding: 20px 20px;
+}
+
+
+.social-icons > .facebook {
+    width: 11.19px;
+    height: 20.45px;
+}
+
+.social-icons > .twitter {
+    width: 20.67px;
+    height: 17.66px;
+}
+
+.social-icons > .instagram {
+    width: 21.31px;
+    height: 22.43px;
+}
