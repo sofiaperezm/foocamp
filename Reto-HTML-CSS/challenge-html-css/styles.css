@@ -131,7 +131,7 @@ h1 > span {
     padding: 20px;
 }
 
-.testiminials-title {
+.centered-title {
     font-family: Work Sans;
     font-size: 37px;
     line-height: 54px;
@@ -141,7 +141,7 @@ h1 > span {
     padding-top: 80px;
 }
 
-.testimonials-text {
+.centered-text {
     font-family: Work Sans;
     font-size: 18px;
     line-height: 38px;
@@ -151,12 +151,18 @@ h1 > span {
     margin-right: 20px;
 }
 
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .testimonials-card {
     background: #FFFFFF;
     box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.0588235);
     border-radius: 29px;
     width: 335px;
-    height: 518px;
+    height: 466px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
@@ -218,4 +224,62 @@ h1 > span {
 .card-label--width {
     width: 198.42px;
     height: 21px;
+}
+
+.news-section {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-card {
+    width: 335px;
+    height: 401.52px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.news-image {
+    width: 335px;
+    height: 218.13px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.news-date {
+    display: flex;
+    justify-content: aling items;
+}
+
+.schedule-icon {
+    width: 14.79px;
+    height: 15.2px;
+    padding-left: 26.58px;
+    margin-top: 31px;
+}
+
+.date {
+    padding-left: 11.92px;
+    margin-top: 27.56px;
+    font-family: Work Sans;
+    font-size: 16px;
+    line-height: 19px;
+    color: #565656;
+}
+
+.news-text {
+    font-family: Work Sans;
+    font-size: 22px;
+    line-height: 26px;
+    color: #252525;
+    padding-left: 27px;
+    margin-top:20.16px;
+}
+
+.button-news--margin {
+    margin-top: 146.34px;
 }
