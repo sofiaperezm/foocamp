@@ -1,11 +1,65 @@
 /* Font Family Work Sans */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+:root {
+    --padding-horizontal-mobile: 1.25rem;
+    --primary: #717cff;
+    --black-1: #2F2F2F;
+    --gray-1: #7D7D7D;
+    --gray-2: #373737;
+    --white-1: #FAFAFA;
+}
+
+body {
+    margin: 0;
+}
+
+body,
+button {
+    font-family: "Work Sans";
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 11px;
+    border: none;
+    padding: 0.7rem 1rem;
+}
+
+button.primary {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 2.5rem var(--padding-horizontal-mobile);
 }
 
 .logo {
@@ -14,77 +68,61 @@
 }
 
 .menu-icon {
-    width: 52px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
 } 
 
 .hero {
-    padding: 20px 20px;
+    padding: var(--padding-horizontal-mobile);
 }
 
 .hero-image {
     display: none;
 }
 
-.hero__text {
-    /* display: flex; */
+.paragraph {
     font-size: 18px;
-    font-family: "Work Sans";
     line-height: 38px;
-    color: #7D7D7D
+    color: var(--gray-1);
+    word-wrap: break-word;
 }
 
-.hero__text--font {
+.hero__title {
     font-size: 38px;
+    font-weight: 400;
     line-height: 45px;
-    color: #2F2F2F;
+    color: var(--black-1);
 }
 
-h1 > span {
-    color:#717cff
+.hero__title > span {
+    color: var(--primary);
 }
 
-.apply-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #717cff;
-    color: #FFFFFF;
-    border-radius: 11px;
-    border: none;
-    font-family: "Work Sans";
-    font-family: Work Sans;
-    font-size: 18px;
-    line-height: 40px;
-    padding: 12px 20px;
-}
-
-.apply-button > img {
+.primary > img {
     width: 18.17px;
     height: 17.72px;
-    padding-left: 12px;
+    margin-left: 1rem;
 }
 
-.icons {
+.social-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100px;
-    padding: 20px 20px;
+    padding: var(--padding-horizontal-mobile) 0;
 }
 
-
-.social-icons > .facebook {
+.social-icon > .facebook {
     width: 11.19px;
     height: 20.45px;
 }
 
-.social-icons > .twitter {
+.social-icon > .twitter {
     width: 20.67px;
     height: 17.66px;
 }
 
-.social-icons > .instagram {
+.social-icon > .instagram {
     width: 21.31px;
     height: 22.43px;
 }
@@ -92,8 +130,9 @@ h1 > span {
 .universities {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    background-color: var(--white-1);
     align-items: center;
+    padding: 3.5rem var(--padding-horizontal-mobile);
 }
 
 .universities-title {
@@ -102,43 +141,44 @@ h1 > span {
     line-height: 27px;
     text-align: center;
     letter-spacing: 2.1px;
+    margin: 0;
     color: #373737;
-    Opacity: 73%;
-    padding: 20px 55px 30px; 
+    opacity: 73%;
+}
+
+.universities > img {
+    padding-top: 2.5rem;
+}
+
+.universities > img:nth-child(2) {
+    padding-top: 3.5rem;
 }
 
 .university-macquarie {
     width: 223px;
     height: 68px;
-    padding: 40px;
 }
 
 .university-charles {
     width: 248px;
     height: 64.26px;
-    padding: 20px;
 }
 
 .university-newcastle {
     width: 222px;
     height: 79px;
-    padding: 20px;
 }
 
 .university-trobe {
     width: 272px;
     height: 62px;
-    padding: 20px;
 }
 
-.centered-title {
-    font-family: Work Sans;
+.section-title {
+    color: var(--gray-2);
     font-size: 37px;
     line-height: 54px;
-    text-align: center;
     letter-spacing: -0.4625px;
-    color: #373737;
-    padding-top: 80px;
 }
 
 .centered-text {
@@ -155,6 +195,7 @@ h1 > span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 7rem var(--padding-horizontal-mobile) 3rem var(--padding-horizontal-mobile);
 }
 
 .testimonials-card {
@@ -231,6 +272,7 @@ h1 > span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 98px;
 }
 
 .news-card {
@@ -282,4 +324,11 @@ h1 > span {
 
 .button-news--margin {
     margin-top: 146.34px;
+}
+
+.footer {
+    width: 374px;
+    height: 672px;
+    background-color: #717CFF;
+    margin-top: 134px;
 }
