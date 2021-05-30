@@ -10,8 +10,14 @@
     --white-1: #FAFAFA;
 }
 
-body {
+body, p {
     margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 body,
@@ -181,14 +187,8 @@ button.primary {
     letter-spacing: -0.4625px;
 }
 
-.centered-text {
-    font-family: Work Sans;
-    font-size: 18px;
-    line-height: 38px;
+.text-center {
     text-align: center;
-    color: #7D7D7D;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .testimonials {
@@ -198,15 +198,15 @@ button.primary {
     padding: 7rem var(--padding-horizontal-mobile) 3rem var(--padding-horizontal-mobile);
 }
 
+.testimonials > .testimonials-card {
+    margin: 2rem 0;
+}
+
 .testimonials-card {
     background: #FFFFFF;
     box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.0588235);
     border-radius: 29px;
-    width: 335px;
-    height: 466px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
+    padding: 1.8rem;
 }
 
 .card-avatar {
@@ -217,49 +217,31 @@ button.primary {
 
 .card-header {
     display: flex;
-    padding-top: 38px;
-    margin-left: 34px;
 }
 
 .card-heading {
-    margin: 0;
-    padding-left: 21px;
+    margin-left: 21px;
 }
 
 .card-title {
-    width: 154px;
-    height: 26px;
-    font-family: Work Sans;
     font-size: 22px;
     line-height: 26px;
     color: #37474F;
     margin: 0;
 }
 
-.card-title--width { 
-    width: 179px;
-    height: 26px;
-}
-
 .card-label {
-    width: 84.41px;
-    height: 21px;
-    font-family: Work Sans;
     font-size: 18px;
     line-height: 21px;
-    color: #37474F;
+    color: #a2b9c5;
     opacity: 0.65;
     margin: 0;
 }
 
 .card-text {
-    width: 264px;
-    height: 341px;
-    font-family: Work Sans;
     font-size: 18px;
     line-height: 31px;
     color: rgba(55, 71, 79, 0.721569);
-    padding-left: 34px;
 }
 
 .card-label--width {
@@ -272,7 +254,11 @@ button.primary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 98px;
+    padding: 2.5rem var(--padding-horizontal-mobile) 8rem var(--padding-horizontal-mobile);
+}
+
+.news-section > .news-card {
+    margin: 2rem 0;
 }
 
 .news-card {
@@ -281,9 +267,6 @@ button.primary {
     background: #FFFFFF;
     box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
 }
 
 .news-image {
@@ -293,42 +276,68 @@ button.primary {
 }
 
 .news-date {
+    align-items: center;
     display: flex;
-    justify-content: aling items;
+    padding: 1rem 2rem 0 2rem;
 }
 
 .schedule-icon {
     width: 14.79px;
     height: 15.2px;
-    padding-left: 26.58px;
-    margin-top: 31px;
 }
 
 .date {
-    padding-left: 11.92px;
-    margin-top: 27.56px;
-    font-family: Work Sans;
     font-size: 16px;
     line-height: 19px;
     color: #565656;
+    margin-left: 1rem;
 }
 
 .news-text {
-    font-family: Work Sans;
     font-size: 22px;
     line-height: 26px;
     color: #252525;
-    padding-left: 27px;
-    margin-top:20.16px;
+    padding: 0 2rem;
+    margin: 0;
 }
 
-.button-news--margin {
-    margin-top: 146.34px;
+.button-news {
+    margin-top: 4rem;
 }
 
 .footer {
-    width: 374px;
-    height: 672px;
-    background-color: #717CFF;
-    margin-top: 134px;
+    background-color: var(--primary);
+    color: white;
+    padding: 3rem 1.2rem;
+}
+
+.footer-logo {
+  height: 57px;
+  width: 160px;
+}
+
+.footer-menu {
+  margin-bottom: 2rem;
+}
+
+.footer-menu > li {
+  cursor: pointer;
+  margin-top: 1.2rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-menu > li:hover {
+    text-decoration: underline;
+}
+
+.company-address {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 1rem 0 2rem 0;
+}
+
+.copy-rights {
+  font-size: 18px;
+  font-weight: bold;
 }
