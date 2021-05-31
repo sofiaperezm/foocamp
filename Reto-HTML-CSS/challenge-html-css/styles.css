@@ -4,6 +4,7 @@
 :root {
     --padding-horizontal-mobile: 1.25rem;
     --padding-horizontal-tablet: 3rem;
+    --padding-horizontal-desktop: 5rem;
     --primary: #717cff;
     --black-1: #2F2F2F;
     --gray-1: #7D7D7D;
@@ -42,6 +43,13 @@ button.primary {
     line-height: 40px;
 }
 
+button.outline {
+  background-color: white;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+}
+
 .mt-1 {
     margin-top: 0.25rem;
 }
@@ -77,7 +85,11 @@ button.primary {
 .menu-icon {
     width: 40px;
     height: 30px;
-} 
+}
+
+.navbar-menu {
+    display: none;
+}
 
 .hero {
     padding: var(--padding-horizontal-mobile);
@@ -135,10 +147,7 @@ button.primary {
 }
 
 .universities {
-    display: flex;
-    flex-direction: column;
     background-color: var(--white-1);
-    align-items: center;
     padding: 3.5rem var(--padding-horizontal-mobile);
 }
 
@@ -153,11 +162,17 @@ button.primary {
     opacity: 73%;
 }
 
-.universities > img {
+.universities-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.universities-logos > img {
     padding-top: 2.5rem;
 }
 
-.universities > img:nth-child(2) {
+.universities-logos > img:nth-child(2) {
     padding-top: 3.5rem;
 }
 
@@ -199,7 +214,7 @@ button.primary {
     padding: 7rem var(--padding-horizontal-mobile) 3rem var(--padding-horizontal-mobile);
 }
 
-.testimonials > .testimonials-card {
+.testimonials-list > .testimonials-card {
     margin: 2rem 0;
 }
 
@@ -400,4 +415,74 @@ button.primary {
 
 }
 
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 2.5rem var(--padding-horizontal-desktop);
+    }
 
+    .navbar-options {
+        flex-basis: 70%;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar-menu {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu > .navbar-menu--option:hover {
+        border-bottom: 2px solid var(--primary);
+        cursor: pointer;
+        padding-bottom: .5rem;
+        transition: 0.15s linear;
+    }
+
+    .universities {
+        padding: 3rem var(--padding-horizontal-desktop) 3rem var(--padding-horizontal-desktop);
+    }
+
+    .universities-logos {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: no-wrap;
+    }
+
+    .universities-logos > img:nth-child(2) {
+        padding-top: 0;
+    }
+
+    .universities-logos > img {
+      max-width: 20%;
+      padding: 0;
+      margin: 2.5rem 0;
+      height: auto;
+    }
+
+    .testimonials {
+        padding: 7rem var(--padding-horizontal-desktop) 3rem var(--padding-horizontal-desktop);
+    }
+
+    .testimonials-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .testimonials-card {
+        box-sizing: border-box;
+        flex-basis: 46%;
+    }
+
+    .news-section {
+        padding: 2.5rem var(--padding-horizontal-desktop) 8rem var(--padding-horizontal-desktop);
+    }
+
+    .news-card {
+        flex-basis: 32%;
+    }
+}
